@@ -1,0 +1,201 @@
+#imagecardcontainer {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  position: relative;
+  .imagecontainer {
+    text-align: center;
+  }
+}
+
+#return-action-img-card {
+  display: none;
+}
+
+.image-card-transition {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+#image-card-container > #content {
+  flex-direction: column;
+  background-color: #f7f6f3;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f7f6f3;
+  border-radius: 12px 12px 0px 0px;
+  position: relative;
+  top: -30px;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#image-card-container > #content p {
+  color: black;
+}
+
+#content > p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: black;
+}
+
+#content p,
+.lg-card ul li {
+  font-family: "Metropolis";
+  font-style: normal;
+}
+
+.return-btn {
+  position: relative;
+  left: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+  .image-card-transition {
+    max-width: 360px;
+  }
+}
+#content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  #topcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+
+    .sm-card {
+        width: 152px;
+      background: #ffffff;
+      border-radius: 6px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 25px;
+      .text {
+        
+        p {
+          color: black;
+          font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        }
+      }
+    }
+  }
+  #midcontent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-radius: 12px;
+    background: white;
+    .mdcard {
+      p {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        color: black;
+      }
+      .daystreak {
+        p {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 14px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+#bottomcontent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  border-radius: 12px;
+  background: white;
+  .lgcard {
+    max-width: 335px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .lgcard ul li {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+}
+.cardheader {
+//   font-weight: 600;
+//   font-size: 24px;
+//   line-height: 24px;
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: black;
+    font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  }
+}
+.daystreak {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  p {
+    color: black;
+  }
+}
+
+#headercontainer {
+    /* Rectangle Copy */
+    display: flex;
+    width: 100%;
+    margin: 24px 0px;
+    img{
+        height: 16px;
+        width: 20px;
+    }
+    span{
+      font-family: Metropolis;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 14px;
+      padding-left: 16px;
+      
+    }
+  }

@@ -1,0 +1,1 @@
+export  const  hompeageBaseUrl = 'https://9520df26-373d-4c19-9353-e2d4576bdbfc.mock.pstmn.io/home/';
