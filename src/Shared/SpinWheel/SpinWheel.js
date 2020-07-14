@@ -8,7 +8,7 @@ const bias = 60;
 const SHEET_ID = "16mVkxSmar52B5gZB6P0hRBVxjmD-h9m_cgf5-l49NQk";
 const ACCESS_TOKEN =
   "ya29.a0AfH6SMDwdpdo97h3QzaDmGsbIv5XyaM4VB1SmXMRtY5k0h_CayCNLqeRuekgkq3qfu5M_DG74KBHkdNXalfg_xsBWRpGZOs1-ogGeRlDnu4CAyh0mewHOi0UWYFVJbqpEgAoYVb09FNR5456Qat2waj4XMItICFXkhw";
-
+/*Token may get expired  */
 export default class SpinWheel extends Component {
   moveTheWheel = () => {
     let multiplier = Math.floor(Math.random() * 12) + bias;
