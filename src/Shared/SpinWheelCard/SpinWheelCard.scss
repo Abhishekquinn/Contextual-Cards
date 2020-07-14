@@ -1,0 +1,43 @@
+.spinparentContainer {
+  background-color: white;
+  border-radius: 12px;
+  height: 60px;
+  display: flex;
+  transition: all 0.4s ease-in-out;
+
+  .spincardcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+    .textContent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img {
+        height: 30px;
+        width: 30px;
+      }
+      span {
+        margin-left: 10px;
+      }
+    }
+
+    .spintext {
+      color: black;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  .spincardcontainer > .icon::after {
+    content: url("../../Images/rarrow.svg");
+    width: 20px;
+    height: 20px;
+  }
+}

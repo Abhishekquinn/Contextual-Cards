@@ -1,0 +1,29 @@
+.shimmerParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  width: 320px;
+  background-image: linear-gradient(
+    to right,
+    #f4f4f4 0%,
+    #fff 20%,
+    #f4f4f4 40%,
+    #f4f4f4 100%
+  );
+  animation: animation 1.5s infinite ease-in-out;
+  border-radius: 12px;
+}
+
+@keyframes animation {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 200px;
+  }
+}
+
