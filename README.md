@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
 
 Step-1- npm install 
 Step-2- npm start
-Step-3- [http://localhost:3000]
+Step-3- go to [http://localhost:3000]
 
 
 ## Available Scripts
@@ -74,7 +73,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-=======
-# Contextual-Cards
-A PWA to display contextual cards
->>>>>>> 90c627fc413495f0990668f29c23e071126263a6
