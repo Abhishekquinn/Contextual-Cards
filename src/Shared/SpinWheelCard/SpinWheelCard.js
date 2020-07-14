@@ -8,6 +8,7 @@ export default class SpinWheelCard extends Component {
     window.location.href = "/rewards";
   };
 
+  
   render() {
     const{data}=this.props;
     return (
