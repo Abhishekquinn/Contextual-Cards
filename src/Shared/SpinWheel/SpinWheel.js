@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./SpinWheel.scss";
 import powerController from "../../Images/power-controller.svg";
+import {GoogleSpreadsheet} from 'google-spreadsheet';
+import googleCred from '../../Utils/credentials';
 
 const vals = [45, 90, 135, 180, 225, 270, 315, 360];
 const bias = 60;
@@ -18,8 +20,30 @@ export default class SpinWheel extends Component {
       -1 * Math.abs(rotDeg)
     }deg)`; //anti clock wise logic
     let index = ((Math.abs((rotDeg % 360) - 360) / 45) % 8) + 1;
-    this.updateSheetValues(index);
+    this.updateData(index);
   };
+
+
+
+  async updateData(index){
+    const doc = new GoogleSpreadsheet(SHEET_ID);
+    await doc.useServiceAccountAuth({
+        client_email: googleCred.client_email,
+        private_key: googleCred.private_key
+    });
+    await doc.loadInfo();
+
+    const sheet = doc.sheetsByIndex[0];
+
+    await sheet.setHeaderRow(['web_client', 'timestamp' , 'spin_result_index']);
+    await sheet.addRow({ 
+        web_client: 'react_pwa', 
+        timestamp: Date.now(),
+        spin_result_index: index 
+    });
+    
+            
+}
 
   updateSheetValues = (index) => {
     fetch(

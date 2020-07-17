@@ -21,6 +21,7 @@ export default class ImageCard extends Component {
     for (var i = 0; i < elems.length; i++) {
       elems[i].classList.add("invisible");
     }
+
     var header = document.getElementById("headercontainer");
     header.style.display = "flex";
     var contentId = document.getElementById("content");
